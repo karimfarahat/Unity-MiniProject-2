@@ -3,3 +3,8 @@ All 3 Humanoid Animations
 1 Humanoid Transition
 Table Structure
 Table Texture
+
+Ahmed's Tasks:
+- Two fruits animations
+- One fruit transition
+- Menu
