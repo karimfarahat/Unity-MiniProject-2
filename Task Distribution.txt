@@ -8,3 +8,10 @@ Ahmed's Tasks:
 - Two fruits animations
 - One fruit transition
 - Menu
+
+Mohamed's Tasks:
+- Glass texture
+- Lights
+- 1 Fruit Animation 
+- 1 Button Animation
+- Text manipulation
