@@ -15,3 +15,9 @@ Mohamed's Tasks:
 - 1 Fruit Animation 
 - 1 Button Animation
 - Text manipulation
+
+Aya's Tasks:
+- 1 Wheel Animation
+- 1 Fruit Animation
+- 2 Fruit Transitions
+- Sounds
