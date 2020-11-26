@@ -25,6 +25,7 @@ Aya's Tasks:
 Nawal's Tasks:
 - 1 Humanoid Animation
 - 1 Entrance Animation
-- clickable button with juhayna label
+- Clickable button with juhayna label
 - 1 Humanoid transition
 - 1 Wheel Transition
+
