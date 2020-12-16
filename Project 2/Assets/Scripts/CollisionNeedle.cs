@@ -12,6 +12,16 @@ public class CollisionNeedle : MonoBehaviour
     public TextMeshProUGUI textText;
     public TextMeshProUGUI buttonText;
     private string SpinA = "Spin Again";
+
+    public GameObject guava;
+    public GameObject orange;
+    public GameObject apple;
+    public GameObject blackberry;
+    public GameObject milk;
+    public GameObject mango;
+    public GameObject pineapple;
+    public GameObject fruitPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,14 +34,11 @@ public class CollisionNeedle : MonoBehaviour
         panel.SetActive(false);
     }
 
-    public void openPanel(string title, string desc)
+    public void openPanel(string title, string desc, GameObject fruit)
     {
             panel.SetActive(true);
-            //titleText = GetComponent<TMP_Text>();
             titleText.text = title;
-            //textText = GetComponent<TMP_Text>();
             textText.text =desc;
-           // buttonText = GetComponent<TMP_Text>();
             buttonText.text =  SpinA;
             
         
