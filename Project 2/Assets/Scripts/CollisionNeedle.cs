@@ -74,7 +74,7 @@ public class CollisionNeedle : MonoBehaviour
                     Debug.Log("green hit");
 
                     string title = "Pineapple";
-                    string Descrip = "Pineapple health juice benefits include immune booster and inflammation fighter, helps to detoxify the body and mind, incredibly great for vision, regulates blood pressure, cancer protective, strengthens gums, promotes healthy digestion, treats ulcerative colitis, good for arthritic patients, reduces menstrual cramps, supports healthy skin, cures Asthma.";
+                    string Descrip = "Pineapple health juice benefits include immune booster and inflammation fighter, helps to detoxify the body and mind, incredibly great for vision, regulates blood pressure, cancer protective, strengthens gums, promotes digestion, treats ulcerative colitis, good for arthritic patients, reduces menstrual cramps, supports healthy skin, cures asthma.";
                     openPanel(title, Descrip);
                 }
                 if (other.tag == "blue")
@@ -106,7 +106,7 @@ public class CollisionNeedle : MonoBehaviour
                     Debug.Log("orange hit");
 
                     string title = "Orange";
-                    string Descrip = "Orange juice is enjoyed around the world.It’s naturally high in vital nutrients, such as vitamin C and potassium.Plus, commercial varieties are often enriched with calcium and vitamin D.Nonetheless.Here are 5 health benefits of orange juice.";
+                    string Descrip = "Orange juice is enjoyed around the world.It’s naturally high in vital nutrients, such as vitamin C and potassium.Plus, commercial varieties are often enriched with calcium and vitamin D.";
                     openPanel(title, Descrip);
                 }
             }
