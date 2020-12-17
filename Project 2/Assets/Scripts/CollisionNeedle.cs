@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class CollisionNeedle : MonoBehaviour
@@ -21,24 +20,19 @@ public class CollisionNeedle : MonoBehaviour
     public GameObject mango;
     public GameObject pineapple;
     public GameObject fruitPos;
-
     // Start is called before the first frame update
     void Start()
     {
         panel.SetActive(false);
-    }
-
-    public void SpinAgain()
-    {
-
-        panel.SetActive(false);
-       
-
+      
     }
 
     public void openPanel(string title, string desc, GameObject fruit)
     {
+        if (panel != null)
+        {
             panel.SetActive(true);
+
             titleText.text = title;
             textText.text =desc;
             buttonText.text =  SpinA;
@@ -57,6 +51,7 @@ public class CollisionNeedle : MonoBehaviour
                 if (other.tag == "yellow")
                 {
                     Debug.Log("yellow hit");
+
                     string title = "Guava";
                     string Descrip = "Guava Juice is a quick source of nutrition to refresh you in this sweltering summer heat . Guava Juice keeps you hydrated and is a delicious source of Vitamin C.";
 
@@ -90,7 +85,6 @@ public class CollisionNeedle : MonoBehaviour
                 if (other.tag == "pink")
                 {
                     Debug.Log("pink hit");
-
                     string title = "Mango";
                     string Descrip = "It’s a drupe, or stone fruit, which means that it has a large seed in the middle.This fruit is not only delicious but also boasts an impressive nutritional profile.In fact, studies link mango and its nutrients to health benefits, such as improved immunity, digestive health and eyesight, as well as a lower risk of certain cancers.";
                     openPanel(title, Descrip, mango);
@@ -98,7 +92,6 @@ public class CollisionNeedle : MonoBehaviour
                 if (other.tag == "purple")
                 {
                     Debug.Log("purple hit");
-
                     string title = "Black Berries";
                     string Descrip = "Blackberries offer many health benefits, including: Full of vitamins and minerals like C, K, and manganese. High in fiber. May boost brain health.";
                     openPanel(title, Descrip, blackberry);
@@ -106,10 +99,10 @@ public class CollisionNeedle : MonoBehaviour
                 if (other.tag == "orange")
                 {
                     Debug.Log("orange hit");
-
                     string title = "Orange";
                     string Descrip = "Orange juice is enjoyed around the world.It’s naturally high in vital nutrients, such as vitamin C and potassium.Plus, commercial varieties are often enriched with calcium and vitamin D.";
                     openPanel(title, Descrip, orange);
+
                 }
             }
             WheelController.doAction = false;

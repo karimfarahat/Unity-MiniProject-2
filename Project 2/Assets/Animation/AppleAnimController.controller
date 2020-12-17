@@ -10,6 +10,7 @@ AnimatorState:
   m_Name: FruitIdle
   m_Speed: 1
   m_CycleOffset: 0
+
   m_Transitions:
   - {fileID: -325545020518179704}
   m_StateMachineBehaviours: []
@@ -27,6 +28,7 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+
 --- !u!1102 &-6317305468298433693
 AnimatorState:
   serializedVersion: 5
