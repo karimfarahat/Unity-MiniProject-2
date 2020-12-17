@@ -18,7 +18,7 @@ public class WheelController : MonoBehaviour
     public void OnMouseDown()
     {
         GetComponent<Animator>().SetBool("isPressed", true);
-        genSpeed = 2.0f; //Random.Range(5.000f, 10.000f);
+        genSpeed = Random.Range(5.000f, 10.000f);
         subSpeed = Random.Range(0.003f, 0.009f);
         isSpinning = true;
     }
