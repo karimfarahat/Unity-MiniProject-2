@@ -20,10 +20,11 @@ public class CollisionNeedle : MonoBehaviour
     public GameObject mango;
     public GameObject pineapple;
     public GameObject fruitPos;
+    public GameObject fruitPosG;
     // Start is called before the first frame update
     void Start()
     {
-        panel.SetActive(false);
+       panel.SetActive(false);
       
     }
 
@@ -36,10 +37,22 @@ public class CollisionNeedle : MonoBehaviour
             titleText.text = title;
             textText.text = desc;
             buttonText.text = SpinA;
+            if(fruit.tag == "guava")
+            {
+                fruit.transform.position = fruitPosG.transform.position;
+            }
+            else
+            {
+                fruit.transform.position = fruitPos.transform.position;
+            }
             fruit.transform.position = fruitPos.transform.position;
             fruit.GetComponent<Animator>().SetBool("animate", true);
 
         }
+    }
+    public void spinAgain()
+    {
+        panel.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
