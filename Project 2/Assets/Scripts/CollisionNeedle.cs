@@ -21,6 +21,7 @@ public class CollisionNeedle : MonoBehaviour
     public GameObject pineapple;
     public GameObject fruitPos;
     public GameObject fruitPosG;
+    public GameObject fruitPosOut;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,9 +51,47 @@ public class CollisionNeedle : MonoBehaviour
 
         }
     }
+    public void closePanel ()
+    {
+        if(guava.transform.position == fruitPosG.transform.position)
+        {
+            guava.transform.position = fruitPosOut.transform.position;
+
+        }else if(apple.transform.position == fruitPos.transform.position) {
+
+            apple.transform.position = fruitPosOut.transform.position;
+        }
+        else if (pineapple.transform.position == fruitPos.transform.position)
+        {
+
+            pineapple.transform.position = fruitPosOut.transform.position;
+        }
+        else if (milk.transform.position == fruitPos.transform.position)
+        {
+
+            milk.transform.position = fruitPosOut.transform.position;
+        }
+        else if (mango.transform.position == fruitPos.transform.position)
+        {
+
+            mango.transform.position = fruitPosOut.transform.position;
+        }
+        else if (blackberry.transform.position == fruitPos.transform.position)
+        {
+
+            blackberry.transform.position = fruitPosOut.transform.position;
+        }
+        else 
+        {
+
+            orange.transform.position = fruitPosOut.transform.position;
+        }
+
+    }
     public void spinAgain()
     {
         panel.SetActive(false);
+        closePanel();
     }
 
     private void OnTriggerEnter(Collider other)
