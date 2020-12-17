@@ -12,6 +12,7 @@ TagManager:
   - pink
   - purple
   - green
+  - guava
   layers:
   - Default
   - TransparentFX
