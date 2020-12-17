@@ -34,10 +34,12 @@ public class CollisionNeedle : MonoBehaviour
             panel.SetActive(true);
 
             titleText.text = title;
-            textText.text =desc;
-            buttonText.text =  SpinA;
-        fruit.transform.position = fruitPos.transform.position;
-        fruit.GetComponent<Animator>().SetBool("animate", true);
+            textText.text = desc;
+            buttonText.text = SpinA;
+            fruit.transform.position = fruitPos.transform.position;
+            fruit.GetComponent<Animator>().SetBool("animate", true);
+
+        }
     }
 
     private void OnTriggerEnter(Collider other)
