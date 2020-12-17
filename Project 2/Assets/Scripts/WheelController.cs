@@ -7,7 +7,7 @@ public class WheelController : MonoBehaviour
     public GameObject Wheel;
     public GameObject Needle;
     
-
+    
     public float genSpeed;
     public float subSpeed;
     public bool isSpinning = false;
